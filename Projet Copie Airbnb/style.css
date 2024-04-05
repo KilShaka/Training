@@ -1,0 +1,357 @@
+
+/* L'ETOILE S'APPLIQUE A TOUT. Je commence par retirer tout les styles mis en place par le navigateur */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* NAVIGATION */
+
+/* PREMIERE LIGNE DU NAV */
+.ligne_un {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px ;
+    margin-right: 100px ;
+    margin-top: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    align-items: center;
+}
+
+/* LIENS */
+a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(97, 95, 95);
+}
+/* LIENS VISITES */
+.ligne_un a:visited {
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+/* LIEN SURVOLE */
+.ligne_un a:hover{
+    background-color: rgb(247, 247, 247);
+    border-radius: 25px;
+    color: rgb(43, 43, 43);
+    padding: 15px;
+    margin: -15px;
+}
+
+/* CENTRER LES LIENS DU MILIEU */
+.bouton1 {
+    margin-left: 400px;
+}
+.bouton3 {
+margin-right: 110px;
+}
+
+/* METTRE UN LIEN EN NOIR */
+.ligne_un a:nth-child(5) {
+    color: rgb(0, 0, 0);
+}
+
+/* LIENS CLIQUES --> NE FONCTIONNE PAS POUR LE MOMENT */
+.ligne_un a:focus{
+    color: black;
+}
+
+/* IMAGES/LOGOS */
+/* LOGO AIRBNB */
+.ligne_un img:first-of-type {
+    width: 130px;
+    height: auto;
+}
+
+/* LOGO WEB */
+.ligne_un img:last-of-type {
+    width: 20px;
+    height: 20px
+}
+/* LOGO WEB au SURVOL */
+.ligne_un img:last-of-type:hover {
+   background-color: rgb(242, 242, 242);
+   border-radius: 25px;
+   padding: 15px;
+   margin: -15px;
+   cursor: pointer;
+}
+
+/* DEUXIEME PARTIE DU NAV */
+.ligne_deux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 23% ;
+    margin-right: 23% ;
+    margin-top: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    border: 1px solid darkgray;
+    border-radius: 50px;
+    padding: 25px;
+    box-shadow: rgb(226 226 226) 0px 5px 9px 0px;
+    height: 30px;
+}
+
+#texte-alternatif {
+    display: none;
+}
+
+.flechasse {
+    margin-top: 30px;
+    opacity: 0.6;
+    
+}
+.filtres {
+    opacity: 0.7;
+}
+/* LA LOUPE */
+.ligne_deux img {
+    width: auto;
+    height: 60px;
+    border-radius: 80px;
+}
+
+.ligne_deux p {
+    color: rgb(160, 159, 159);
+}
+
+#loupe2 {
+    display: none;
+}
+/* LA LOUPE AU SURVOL */
+.ligne_deux img:hover {
+    filter: brightness(70%);
+}
+
+.ligne_deux p {
+    margin-top: 6px;
+}
+
+.ligne_deux a {
+    margin-left: 10px;
+    border-right: solid rgb(227, 226, 226);
+    padding: 0 80px 0 0;
+}
+
+hr {
+    color: rgb(197, 194, 194);
+    margin-top: 30px;
+}
+
+
+
+/* LES PARAMETRES */
+.parametres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+
+.parametres img {
+   max-width: 100px;
+   height: auto;
+   object-fit: contain;
+}
+
+.parametres :nth-child(13) {
+    width: auto;
+    height: 30px;
+    border: black solid;
+    border-radius: 150px;
+}
+.parametres img:hover {
+border-bottom: 3px rgb(225, 225, 225) solid;
+}
+
+
+    /* PHOTOS DES BIENS */
+
+
+.photos_biens img {
+    width: 95%;
+    height: auto;
+    border-radius: 5%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.photos_biens img:hover {
+    cursor: pointer;
+}
+
+.photos_biens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px 80px;
+    gap: 45px 8px;
+    font-size: 1.2em;
+
+}
+
+.photos_biens p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(167, 167, 167);
+    text-align: justify;
+}
+
+.photos_biens h5 {
+    font-size: 0.8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5px;
+}
+
+.photo1 {
+    position: relative;
+}
+
+#coeur {
+    position: absolute;
+    top:4%;
+    left: 80%;
+    width: 10%;
+}
+
+/* FOOTER */
+footer {
+    display: none;
+}
+
+footer img {
+    width:8%;
+    height:auto;
+}
+/* RESPONSIVENESS */
+@media screen and (max-width: 744px) {
+
+    .ligne_un {
+        display: none;
+    }
+    
+    .ligne_deux {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: flex;
+        justify-content: left;
+    }
+    .ligne_deux img {
+       display: none;
+    }
+    .ligne_deux a {
+       display: none;
+    }
+    .parametres {
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+
+    #texte-alternatif {
+        display: block;
+        color: black;
+        border: none;
+    }
+    
+    }
+
+@media screen and (max-width: 1127px){
+    .photos_biens {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .parametres {
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .photos_biens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .parametres {
+        margin-left: 10%;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .photos_biens {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1% 3% 1% 8%;
+        margin-top: 45%;
+    }
+    .bandeau {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 2; 
+    }
+    .parametres {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        overflow-x: hidden;
+        border-bottom: 1px solid rgb(187 187 187 / 28%);
+        box-shadow: rgb(226 226 226) 1px 2px 4px 0px;
+        margin-bottom: 0.5%;
+    }
+
+    .photo1 {
+        justify-content: center;
+    }
+
+.ligne_deux {
+    margin-top: 3%;
+    padding: 4%;
+    font-size: 0.8em;
+    border: 1px solid #87868628;
+}
+
+hr {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 10%;
+    
+}
+
+#loupe2 {
+    display: block;
+    width: 7%;
+    height: auto;
+    object-fit: contain;
+}
+
+#Connexion {
+    margin-right: 20%;
+}
+
+#Explorer {
+    margin-left: 20%;
+}
