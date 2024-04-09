@@ -10,14 +10,19 @@
 /* PREMIERE LIGNE DU NAV */
 .ligne_un {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 100px ;
     margin-right: 100px ;
     margin-top: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     align-items: center;
+}
+
+.logoprincipal {
+    wid
 }
 
 /* LIENS */
@@ -26,6 +31,7 @@ a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(97, 95, 95);
 }
+
 /* LIENS VISITES */
 .ligne_un a:visited {
     text-decoration: none;
@@ -36,16 +42,14 @@ a{
     background-color: rgb(247, 247, 247);
     border-radius: 25px;
     color: rgb(43, 43, 43);
-    padding: 15px;
-    margin: -15px;
 }
 
 /* CENTRER LES LIENS DU MILIEU */
 .bouton1 {
-    margin-left: 400px;
+    margin-left: 200px;
 }
 .bouton3 {
-margin-right: 110px;
+margin-right: 80px;
 }
 
 /* METTRE UN LIEN EN NOIR */
@@ -60,14 +64,14 @@ margin-right: 110px;
 
 /* IMAGES/LOGOS */
 /* LOGO AIRBNB */
-.ligne_un img:first-of-type {
+.logoprincipal img {
     width: 130px;
     height: auto;
 }
 
 /* LOGO WEB */
 .ligne_un img:last-of-type {
-    width: 20px;
+    width: auto;
     height: 20px
 }
 /* LOGO WEB au SURVOL */
@@ -85,16 +89,20 @@ margin-right: 110px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 23% ;
-    margin-right: 23% ;
+    margin-left: 20% ;
+    margin-right: 20% ;
     margin-top: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1em;
-    border: 1px solid darkgray;
+    font-size: 0.8em;
+    border: 1px solid rgb(227, 226, 226);
     border-radius: 50px;
-    padding: 25px;
+    padding: 20px;
     box-shadow: rgb(226 226 226) 0px 5px 9px 0px;
     height: 30px;
+}
+
+#Voyageurs {
+    border: none;
 }
 
 #texte-alternatif {
@@ -112,8 +120,8 @@ margin-right: 110px;
 /* LA LOUPE */
 .ligne_deux img {
     width: auto;
-    height: 60px;
-    border-radius: 80px;
+    height: 180%;
+    border-radius: 100%;
 }
 
 .ligne_deux p {
@@ -135,11 +143,13 @@ margin-right: 110px;
 .ligne_deux a {
     margin-left: 10px;
     border-right: solid rgb(227, 226, 226);
-    padding: 0 80px 0 0;
+    padding: 0 60px 0 0;
 }
 
 hr {
-    color: rgb(197, 194, 194);
+   border-bottom-color: rgb(238, 238, 238);
+   border-color: rgb(238, 238, 238);
+   opacity: 0.2;
     margin-top: 30px;
 }
 
@@ -154,7 +164,7 @@ hr {
     justify-content: space-between;
     margin-left: 90px;
     margin-right: 90px;
-    margin-top: 30px;
+    margin-top: 10px;
     overflow-x: hidden;
     /* Mettre la même hauteur pour tous les enfants */
     align-items: stretch;
@@ -162,16 +172,34 @@ hr {
 
 .button-wrapper {
     position: absolute;
-    right: 0;
+    right: 100px;
     top: 0;
     display: flex;
     align-items: center;
     gap: 24px;
-    height: 74px;
-
-
-    background: white;
+    height: 90px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(255, 255, 255) -20px 0px 13px 8px;
 }
+
+.filter-btn img {
+    display: flex;
+    align-items: center;
+    max-width: 80px;
+   
+}
+
+.filter-btn {
+    padding: 8px;
+    border: solid rgba(228, 228, 228, 0.742);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    filter: brightness(70%);
+}
+
 
 /* Reset btn style */
 .button-wrapper button {
@@ -187,6 +215,7 @@ hr {
     background: white;
     border-radius: 100%;
     border: 1px solid grey;
+   
 }
 
 .button-wrapper button.next img {
@@ -212,6 +241,13 @@ hr {
 .parametres .item-box:hover {
     border-bottom: 3px rgb(225, 225, 225) solid;
     cursor: pointer;
+}
+
+.button-wrapper button.next:hover {
+    box-shadow: rgb(228, 228, 228) 0px 0px 15px 1px;
+    cursor: pointer;
+    padding: 14px;
+    transition: padding 0.3ms;
 }
 
 /* .parametres :nth-child(13) {
@@ -240,7 +276,7 @@ hr {
 .photos_biens {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 30px 80px;
+    padding: 10px 80px;
     gap: 45px 8px;
     font-size: 1.2em;
 
@@ -428,6 +464,6 @@ footer {
 
 .filter-wrapper .filter-list .filter {
     width: 53px;
-    height: 100%;
-    background: white;
+    height: 1%;
+    background: rgb(205, 7, 7);
 }
