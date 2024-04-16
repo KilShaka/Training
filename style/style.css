@@ -10,7 +10,6 @@
 /* PREMIERE LIGNE DU NAV */
 .ligne_un {
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 60px ;
@@ -36,19 +35,73 @@ a{
     color: rgb(124, 124, 124);
 }
 /* LIEN SURVOLE */
-.ligne_un a:hover{
+/* .ligne_un a:hover{
     background-color: rgb(247, 247, 247);
     border-radius: 25px;
     color: rgb(43, 43, 43);
-}
+} */
 
 /* CENTRER LES LIENS DU MILIEU */
 .bouton1 {
     margin-left: 300px;
+    position: relative;
 }
+
+#fond1 {
+    width: 110px;
+    height: 50px;
+    background-color: rgba(162, 162, 162, 0.111);
+    position: absolute;
+    top: -13px;
+    left: -12px;
+    border-radius: 60px;
+    display: none;
+}
+
+#fond2 {
+    width: 110px;
+    height: 50px;
+    background-color: rgba(162, 162, 162, 0.111);
+    position: absolute;
+    top: -13px;
+    left: -12px;
+    border-radius: 60px;
+    display: none;
+}
+
+#fond3 {
+    width: 180px;
+    height: 50px;
+    background-color: rgba(162, 162, 162, 0.111);
+    position: absolute;
+    top: -13px;
+    left: -16px;
+    border-radius: 60px;
+    display: none;
+}
+
+.bouton1:hover #fond1 {
+    display: block;
+}
+
+.bouton2:hover #fond2 {
+    display: block;
+}
+
+.bouton3:hover #fond3 {
+    display: block;
+}
+
+.bouton2 {
+    
+    position: relative;
+    }
+
 .bouton3 {
 margin-right: 80px;
+position: relative;
 }
+
 nav {
     position: relative;
 }
