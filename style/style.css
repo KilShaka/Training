@@ -80,6 +80,58 @@ a{
     display: none;
 }
 
+#fond4 {
+    width: 260px;
+    height: 50px;
+    background-color: rgba(219, 219, 219, 0.111);
+    position: absolute;
+    top: -13px;
+    left: -16px;
+    border-radius: 60px;
+    display: none;
+}
+
+#fond5 {
+    width: 255px;
+    height: 70px;
+    background-color: rgba(105, 105, 105, 0.102);
+    position: absolute;
+    top: -17px;
+    left: -30px;
+    border-radius: 60px;
+    display: none;
+}
+#fond6 {
+    width: 145px;
+    height: 70px;
+    background-color: rgba(105, 105, 105, 0.102);
+    position: absolute;
+    top: -17px;
+    left: -36px;
+    border-radius: 60px;
+    display: none;
+}
+#fond7 {
+    width: 145px;
+    height: 70px;
+    background-color: rgba(105, 105, 105, 0.102);
+    position: absolute;
+    top: -17px;
+    left: -36px;
+    border-radius: 60px;
+    display: none;
+}
+#fond8 {
+    width: 339px;
+    height: 70px;
+    background-color: rgba(105, 105, 105, 0.102);
+    position: absolute;
+    top: -17px;
+    left: -36px;
+    border-radius: 60px;
+    display: none;
+}
+
 .bouton1:hover #fond1 {
     display: block;
 }
@@ -92,7 +144,28 @@ a{
     display: block;
 }
 
+.bouton4:hover #fond4 {
+    display: block;
+}
+.bouton5:hover #fond5 {
+    display: block;
+}
+.bouton6:hover #fond6 {
+    display: block;
+}
+.bouton7:hover #fond7 {
+    display: block;
+}
+.bouton8:hover #fond8 {
+    display: block;
+}
+
 .bouton2 {
+    
+    position: relative;
+    }
+
+.bouton4 {
     
     position: relative;
     }
@@ -101,6 +174,22 @@ a{
 margin-right: 80px;
 position: relative;
 }
+
+.bouton5 {
+    position: relative;
+    }
+.bouton6 {
+    
+    position: relative;
+    }
+.bouton7 {
+    
+    position: relative;
+    }
+.bouton8 {
+    
+    position: relative;
+    }
 
 nav {
     position: relative;
@@ -215,6 +304,7 @@ display: block;
     width: auto;
     height: 180%;
     border-radius: 100%;
+    z-index: 2;
 }
 
 .ligne_deux p {
@@ -371,7 +461,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 10px 80px;
     gap: 45px 8px;
-    font-size: 1.2em;
+    font-size: 1em;
 
 }
 
@@ -397,6 +487,12 @@ hr {
     top:4%;
     left: 80%;
     width: 10%;
+    transition-duration: 150ms;
+    transform-origin: center;
+}
+
+#coeur:hover {
+    transform: scale(1.1);
 }
 
 /* FOOTER */
